@@ -1,0 +1,71 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(.//background.jpg);
+    background-size: cover;
+}
+
+#puzzle-container{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+}
+
+#puzzle-frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 300px;
+    background-color: white;
+}
+
+.square {
+    width: 98px;
+    height: 98px;
+    background-size: 300px 300px;
+    display:inline-block;
+    position: absolute;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s;
+}
+
+.squareComplete{
+    width: 100px;
+    height: 100px;
+}
+
+.img{
+    background-image: url(image.jpg);
+}
+
+.empty {
+  /* background-color: grey; */
+  cursor: inherit;
+}
+
+#cellA {background-position:0 0;}
+#cellB {background-position:-100px 0;}
+#cellC {background-position:-200px 0;}
+#cellD {background-position:0 -100px;}
+#cellE {background-position:-100px -100px;}
+#cellF {background-position:-200px -100px;}
+#cellG {background-position:0 -200px;}
+#cellH {background-position:-100px -200px;}
+#cellI {background-position:-200px -200px;}
+
+
+.pos11,.pos12,.pos13{top:50px;}
+.pos21,.pos22,.pos23{top:150px;}
+.pos31,.pos32,.pos33{top:250px;}
+
+.pos11,.pos21,.pos31{left:50px;}
+.pos12,.pos22,.pos32{left:150px;}
+.pos13,.pos23,.pos33{left:250px;}
